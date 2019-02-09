@@ -1,10 +1,10 @@
 h1 {
-  font-family:monospace;
+  font-family: monospace;
   padding:50px;
 }
 
 p {
-  font-family:monospace;
+  font-family: monospace;
 }
 
 body {
@@ -20,13 +20,13 @@ img {
 }
 
 ul {
-  font-family:monospace;
+  font-family: monospace;
   color:black;
   font-size:14pt;
 }
 
 input {
-  font-family:monospace;
+  font-family: monospace;
   background-color: floralwhite;
   border: none;
 }
