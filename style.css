@@ -29,6 +29,9 @@ input {
   font-family: monospace;
   background-color: floralwhite;
   border: none;
+}
+
+.button{
   font-size:18pt;
   color:tomato;
 }
