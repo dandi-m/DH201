@@ -28,4 +28,5 @@ ul {
 .button{
   font-family:monospace;
   background-color: floralwhite;
+  border: none;
 }
