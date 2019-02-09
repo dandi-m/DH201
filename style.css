@@ -1,6 +1,6 @@
 h1 {
   font-family: monospace;
-  padding:50px;
+  padding:40px;
 }
 
 p {
@@ -29,6 +29,6 @@ input {
   font-family: monospace;
   background-color: floralwhite;
   border: none;
-  font-size: 16pt;
-  color:tomato
+  font-size: 18pt;
+  color:tomato;
 }
