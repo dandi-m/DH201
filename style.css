@@ -1,0 +1,26 @@
+h1 {
+  font-family:monospace;
+  padding:50px;
+}
+
+p {
+  font-family:monospace;
+}
+
+body {
+  background-color: floralwhite;
+  padding:30px;
+}
+
+img {
+  width:40%;
+  height:40%;
+  margin-left:200px;
+  padding:20px;
+}
+
+ul {
+  font-family:monospace;
+  color:black;
+  font-size:14pt;
+}
