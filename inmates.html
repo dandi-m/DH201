@@ -9,46 +9,5 @@
 <body>
   <h1>Who were the inmates?</h1>
   <p>visualizations here</p>
- <script src="/assets/js/jquery-3.1.0.min.js"></script>
-<script src="/assets/js/typed.min.js"></script>
-
-  <script type="text/javascript">
-
-  var myQuotes =  new Array();
-  
-    myQuotes.push("<span>[the novel is] something that happens to its primary materials [... a] set of operations and programming procedures</span>");
-  
-    myQuotes.push("<span>quick emotions gave the most abstract things the quality of a pleasure or a pain</span>");
-  
-    myQuotes.push("<span>a creature of words (she protests) and of silence (she swoons)</span>");
-  
-    myQuotes.push("<span><i>that other thing</i>, the sound-absorbent screen, life's white machine [...] the texture of et cetera itself</span>");
-  
-    myQuotes.push("<span><i>notations</i> which no function (not even the most indirect) will allow us to justify</span>");
-  
-    myQuotes.push("<span>''He owns form,'' ''doesn't he?'' ''The Tyrant'' ''owns form'''</span>");
-  
-
-    $(".intro-post-title").typed({
-      strings: myQuotes,
-      typeSpeed: 10,
-      backDelay: 5000,
-      startDelay: 200,
-      loop: true,
-      loopCount: false,
-      cursorChar: "|"
-    });
-
-    $(".toggle-button").click(function(){
-      if($(this).text() === 'expand'){
-        $(this).text('collapse');
-        $(this).parent('div').find('.expandable').attr( "expanded", "true" );
-      }else{
-        $(this).text('expand');
-        $(this).parent('div').find('.expandable').attr( "expanded", "false" );
-      }
-    });
-</script>
-
 </body>
 </html>
