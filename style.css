@@ -5,6 +5,7 @@ h1 {
 
 p {
   font-family: monospace;
+  font-size: 150%
 }
 
 body {
@@ -30,4 +31,5 @@ input {
   background-color: floralwhite;
   border: none;
   color:red;
+   font-size: 150%
 }
