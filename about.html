@@ -22,5 +22,31 @@
         });
       </script>
   
+  <style>
+    p {font-size: 200%;
+       margin: 50px;
+      }
+  </style>
+  
+  <p>
+    This site presents data from the admissions logs of Eastern State Penitentiary in Philadelphia, PA from 1830 to 1850, initially kept by Reverend Thomas Larcombe. Eastern State, also known in the mid-19th century as Cherry Hill, was the first solitary confinement penitentiary in the United States. It still operates today as a museum and historical site. The dataset I used came from Admission Books A, B, and D, and was digitized primarily by Michelle Ziogas, a volunteer at the American Philosophical Society Library, where the original logs are currently stored. 
+  </p>
+  
+  <p>
+    I combined the csv files from all three logs into a single file, the used Open Refine to clean up spelling irregularities throughout, mostly in the names of counties where prisoners were arrested and their offenses. I was interested in the racial identity of the prisoners, but found that it was difficult to automate the process of extracting information about race from the column labeled “EthnicityReligionOccupation.” Eventually, I decided to use Excel’s ISNUMBER function to search for “black” and “mulatto” in that column and to label every record in which neither word was found as “white.” In doing so, I certainly oversimplified the racial identities of the prisoners. For example, I did not consider the complexities of “Irish Catholic” as an ethnic category in the mid-19th century, nor did my use of the Excel function register the handful of records that described the prisoner as fully or partly “Indian.”
+  </p>
+  
+  <p>
+    However, my crude categorization still gave me quite a bit of interesting information to work with. I used Tableau to group offenses by type and then to visualize the distribution of types of crime across the three racial categories, since I wanted to know if there were differences in the kinds of crimes white and black (which includes everyone labeled “mulatto” for the purposes of my analysis) prisoners were arrested for. I also used the ISNUMBER function to determine whether the prisoners died while serving their sentence, which I then compared against the racial demographics of the prisoners. While reading about the history of American prison design and Eastern State’s role in it was helpful for many parts of the project, this information was particularly relevant for trying to make sense of the prison’s racial makeup.
+  </p>
+  
+  <p>
+    The most text-heavy part of the data by far was the column of prisoner descriptions. I separated each of the prisoner descriptions into a separate text file and ran them through a topic modeling tool in order to find out what topics Larcombe returned to. I then took the csv that emerged from this process and visualized it using Tableau. Because there were approximately 1700 prisoners documented in this data, I decided to group the records by the year of the prisoner’s admission in order to be able to see patterns in how the frequency of each topic varied over the two decades recorded in the logs. It was also from these descriptions that I was able to extract bits of prisoners’ own words, though of course mediated by Larcombe. By searching for “professed” (and other similar words indicating something being told by the prisoner) in the descriptions, I generated a list of these micro-stories, which are shown at the top of this page.
+  </p> 
+  
+  <p>
+    Finally, I was fortunate enough to be able to talk to Ethan Hill, a former employee at the Eastern State Penitentiary Historical Site, about the penitentiary’s current manifestation and about the project overall. Though not much of our discussion about the complexities of the prison’s current status as a nonprofit and cultural site made it into this project, I think it’s important to acknowledge here the complex legacy of the penitentiary. Even as the historical site prides itself on its willingness to discuss the horrors of the penitentiary system and to host lectures, performances, and art installations about mass incarceration, it also puts on events like “Terror Behind Walls,” a haunted house night in the prison, and encourages visitors to aestheticize the space by, for example, selecting a “Picture of the Week” every week for its Instagram account. Unsettling practices like these make us question the progressive narrative that the historic site tells, which is in many ways a reincarnation of the one told by prison reformers who advocated for solitary confinement in the first place.
+  </p> 
+  
   </body>
 </html>
